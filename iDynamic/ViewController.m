@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // Gán delegate cho txtSearch
     self.txtSearch.delegate = self;
 }
 
@@ -29,7 +30,7 @@
     [self findAnimal];
 }
 
-// Tìm kiếm khi kết thúc gõ text bằng nút enter
+// Tìm kiếm khi kết thúc gõ text bằng nút enter ( hàm implement cho UITextFieldDelegate )
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self findAnimal];
@@ -38,6 +39,8 @@
     [textField resignFirstResponder];
     return YES; // want to hide keyboard
 }
+
+// Tìm ngay khi text thay đổi
 - (IBAction)onTxtSearchEditingChanged:(id)sender {
     [self findAnimal];
 }
@@ -65,7 +68,7 @@
             SEL getImageMethod = @selector(getImage);
             #pragma clang diagnostic pop
             
-            // Có lớp tương ứng kiểm tra xem có hàm tương ứng không
+            // Có lớp tương ứng kiểm tra xem có hàm lấy ảnh tương ứng không
             if ([object respondsToSelector:getImageMethod]) {
                 #pragma clang diagnostic push
                 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
