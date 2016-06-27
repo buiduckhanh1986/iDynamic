@@ -13,6 +13,7 @@
 		60092E081D2188CF00D63279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60092E061D2188CF00D63279 /* Main.storyboard */; };
 		60092E0A1D2188CF00D63279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60092E091D2188CF00D63279 /* Assets.xcassets */; };
 		60092E0D1D2188CF00D63279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60092E0B1D2188CF00D63279 /* LaunchScreen.storyboard */; };
+		60092E191D21AFE500D63279 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 60092E181D21AFE500D63279 /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		60092E091D2188CF00D63279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60092E0C1D2188CF00D63279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60092E0E1D2188CF00D63279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60092E171D21AFE500D63279 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		60092E181D21AFE500D63279 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		60092DFC1D2188CE00D63279 /* iDynamic */ = {
 			isa = PBXGroup;
 			children = (
+				60092E171D21AFE500D63279 /* Animal.h */,
+				60092E181D21AFE500D63279 /* Animal.m */,
 				60092E001D2188CE00D63279 /* AppDelegate.h */,
 				60092E011D2188CE00D63279 /* AppDelegate.m */,
 				60092E031D2188CF00D63279 /* ViewController.h */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60092E051D2188CF00D63279 /* ViewController.m in Sources */,
+				60092E191D21AFE500D63279 /* Animal.m in Sources */,
 				60092E021D2188CE00D63279 /* AppDelegate.m in Sources */,
 				60092DFF1D2188CE00D63279 /* main.m in Sources */,
 			);
